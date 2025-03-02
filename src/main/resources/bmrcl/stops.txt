@@ -1,0 +1,70 @@
+stop_id,stop_name,stop_lat,stop_lon
+1,Madavara,13.056,77.485
+2,Chikkabidarakallu,13.051,77.491
+3,Manjunathanagar,13.047,77.494
+4,Nagasandra,13.042,77.497
+5,Dasarahalli,13.036,77.488
+6,Jalahalli,13.021,77.49
+7,Peenya Industry,13.011,77.492
+8,Peenya,13.0,77.495
+9,Goraguntepalya,12.995,77.498
+10,Yeshwanthpur,12.987,77.502
+11,Sandal Soap Factory,12.98,77.507
+12,Mahalakshmi,12.974,77.51
+13,Rajajinagar,12.967,77.513
+14,Mahakavi Kuvempu Road,12.961,77.516
+15,Srirampura,12.955,77.52
+16,Mantri Square Sampige Road,12.95,77.524
+17,"Nadaprabhu Kempegowda Station, Majestic",12.979,77.572
+18,Chickpete,12.965,77.571
+19,Krishna Rajendra Market,12.958,77.572
+20,National College,12.95,77.571
+21,Lalbagh,12.943,77.571
+22,South End Circle,12.935,77.572
+23,Jayanagar,12.928,77.574
+24,Rashtriya Vidyalaya Road,12.921,77.576
+25,Banashankari,12.913,77.578
+26,Jayaprakash Nagar,12.905,77.579
+27,Yelachenahalli,12.895,77.582
+28,Konanakunte Cross,12.886,77.585
+29,Doddakallasandra,12.88,77.586
+30,Vajarahalli,12.876,77.587
+31,Thalaghattapura,12.87,77.588
+32,Silk Institute,12.868,77.59
+33,Whitefield (Kadugodi),12.995,77.76
+34,Hopefarm Channasandra,12.998,77.75
+35,Kadugodi Tree Park,13.0,77.74
+36,Pattandur Agrahara,13.002,77.73
+37,Sri Sathya Sai Hospital,13.004,77.72
+38,Nallurhalli,13.006,77.71
+39,Kundalahalli,13.008,77.7
+40,Seetharampalya,13.01,77.69
+41,Hoodi,13.012,77.68
+42,Garudacharpalya,13.014,77.67
+43,Singayyanapalya,13.016,77.66
+44,Krishnarajapura (K.R. Pura),13.018,77.65
+45,Benniganahalli,13.02,77.64
+46,Baiyappanahalli,13.022,77.63
+47,Swami Vivekananda Road,13.024,77.62
+48,Indiranagar,13.026,77.61
+49,Halasuru,13.028,77.6
+50,Trinity,13.03,77.59
+51,Mahatma Gandhi Road,13.032,77.58
+52,Cubbon Park,13.034,77.57
+53,"Dr. B.R. Ambedkar Station, Vidhana Soudha",13.036,77.56
+54,"Sir M. Visvesvaraya Station, Central College",13.038,77.55
+55,"Nadaprabhu Kempegowda Station, Majestic",12.979,77.572
+56,Krantivira Sangolli Rayanna (KSR) Railway Station,12.975,77.57
+57,Magadi Road,12.97,77.568
+58,Hosahalli,12.965,77.566
+59,Vijayanagar,12.96,77.564
+60,Attiguppe,12.955,77.562
+61,Deepanjali Nagar,12.95,77.56
+62,Mysuru Road,12.945,77.558
+63,Nayandahalli,12.94,77.556
+64,Rajarajeshwari Nagar,12.935,77.554
+65,Jnanabharathi,12.93,77.552
+66,Pattanagere,12.925,77.55
+67,Kengeri Bus Terminal,12.92,77.548
+68,Kengeri,12.915,77.546
+69,Challaghatta,12.91,77.544
