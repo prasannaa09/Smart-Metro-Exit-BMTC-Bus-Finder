@@ -3,9 +3,7 @@ package com.example.bmrcl.entity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
-import lombok.Data;
 
-@Data
 @Entity
 public class BusRoute {
     @Id
@@ -13,8 +11,28 @@ public class BusRoute {
     private String name;
 
     @ManyToOne
-    private MetroStation startStop;
+    private BusStop startStop;  // Changed from MetroStation to BusStop
 
     @ManyToOne
-    private MetroStation endStop;
+    private BusStop endStop;    // Changed from MetroStation to BusStop
+
+    // Getter for startStop
+    public BusStop getStartStop() {
+        return startStop;
+    }
+
+    // Getter for endStop
+    public BusStop getEndStop() {
+        return endStop;
+    }
+
+    // Setter for startStop
+    public void setStartStop(BusStop startStop) {
+        this.startStop = startStop;
+    }
+
+    // Setter for endStop
+    public void setEndStop(BusStop endStop) {
+        this.endStop = endStop;
+    }
 }
