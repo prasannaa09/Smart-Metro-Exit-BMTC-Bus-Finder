@@ -1,6 +1,5 @@
 package com.example.bmrcl.repository;
 
-
 import com.example.bmrcl.entity.Route;
 import com.example.bmrcl.entity.Stop;
 import com.example.bmrcl.entity.StopTime;
@@ -22,12 +21,12 @@ import java.util.stream.Collectors;
 @Repository
 public class GtfsRepository {
 
-    // Replace with your GitHub repository raw URLs
-    private static final String BMTC_ROUTES_URL = "https://raw.githubusercontent.com/yourusername/bmtc-gtfs/main/routes.txt";
-    private static final String BMTC_STOPS_URL = "https://raw.githubusercontent.com/yourusername/bmtc-gtfs/main/stops.txt";
-    private static final String BMTC_TRIPS_URL = "https://raw.githubusercontent.com/yourusername/bmtc-gtfs/main/trips.txt";
-    private static final String BMTC_STOP_TIMES_URL = "https://raw.githubusercontent.com/yourusername/bmtc-gtfs/main/stop_times.txt";
-    private static final String BMRCL_STOPS_URL = "https://raw.githubusercontent.com/yourusername/bmrc-gtfs/main/stopsbmrcl.txt";
+    // GitHub repository raw URLs from your provided code
+    private static final String BMTC_ROUTES_URL = "https://raw.githubusercontent.com/prasannaa09/Smart-Metro-Exit-BMTC-Bus-Finder/refs/heads/master/src/main/resources/bmtc/routes.txt";
+    private static final String BMTC_STOPS_URL = "https://raw.githubusercontent.com/prasannaa09/Smart-Metro-Exit-BMTC-Bus-Finder/refs/heads/master/src/main/resources/bmtc/stopsbmtc.txt";
+    private static final String BMTC_TRIPS_URL = "https://raw.githubusercontent.com/prasannaa09/Smart-Metro-Exit-BMTC-Bus-Finder/refs/heads/master/src/main/resources/bmtc/trips.txt";
+    private static final String BMTC_STOP_TIMES_URL = "https://raw.githubusercontent.com/prasannaa09/Smart-Metro-Exit-BMTC-Bus-Finder/refs/heads/master/src/main/resources/bmtc/stop_times.txt";
+    private static final String BMRCL_STOPS_URL = "https://raw.githubusercontent.com/prasannaa09/Smart-Metro-Exit-BMTC-Bus-Finder/refs/heads/master/src/main/resources/bmrcl/stopsbmrcl.txt";
 
     public List<Stop> getBmrcStops() {
         try {
@@ -83,8 +82,9 @@ public class GtfsRepository {
         try (CloseableHttpClient client = HttpClients.createDefault()) {
             HttpGet request = new HttpGet(url);
             return client.execute(request, response -> {
-                if (response.getStatusLine().getStatusCode() != 200) {
-                    throw new TransitException("Failed to fetch data from " + url + ": HTTP " + response.getStatusLine().getStatusCode());
+                int statusCode = response.getCode(); // Use getCode() for HttpClient 5.x
+                if (statusCode != 200) {
+                    throw new TransitException("Failed to fetch data from " + url + ": HTTP " + statusCode);
                 }
                 BufferedReader reader = new BufferedReader(new InputStreamReader(response.getEntity().getContent()));
                 reader.readLine(); // Skip header
