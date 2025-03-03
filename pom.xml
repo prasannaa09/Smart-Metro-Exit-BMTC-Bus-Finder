@@ -22,6 +22,20 @@
 		<java.version>17</java.version>
 	</properties>
 
+	<!-- Dependency Management to handle versions of dependencies -->
+	<dependencyManagement>
+		<dependencies>
+			<!-- Spring Boot BOM (Bill of Materials) to manage versions -->
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<version>3.2.4</version> <!-- Same as the parent version -->
+				<scope>import</scope>
+				<type>pom</type>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
 	<dependencies>
 		<!-- Spring Boot Starter for Web Applications -->
 		<dependency>
@@ -84,7 +98,7 @@
 		<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-			<version>2.6.0</version>
+			<version>2.6.0</version> <!-- Latest stable version -->
 		</dependency>
 
 		<!-- Testing Dependencies -->
