@@ -9,17 +9,15 @@ public class Route {
     @JsonProperty("route_long_name")
     private String routeLongName;
 
-    // Default constructor
-    public Route() {
-    }
+    public Route() {}
 
-    // Constructor for BMTC routes (routes.txt)
     public Route(String[] data) {
-        this.routeId = data[3]; // route_id is at index 3
-        this.routeLongName = data[4].replace("\"", ""); // route_long_name is at index 4
+        if (data.length > 4) {
+            this.routeId = data[3].trim();
+            this.routeLongName = data[4].replace("\"", "").trim();
+        }
     }
 
-    // Getters and Setters
     public String getRouteId() {
         return routeId;
     }
